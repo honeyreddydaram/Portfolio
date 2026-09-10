@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Honey Reddy Daram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="site-name">Honey Reddy Daram</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="Honey_Resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <hr class="header-divider" />
+
+  <main>
+    <div class="main-inner">
+
+      <!-- Work Experience -->
+      <div class="section-block">
+        <div class="section-heading"><span>Work Experience</span></div>
+
+        <div class="exp-entry">
+          <div class="exp-header">
+            <div>
+              <h3>Robotics Intern</h3>
+              <div class="exp-org">Indian Institute of Information Technology, Design and Manufacturing (IIITDM), India</div>
+            </div>
+            <span class="exp-date">May 2024 – Nov 2024</span>
+          </div>
+          <ul>
+            <li>Developed and debugged a modular Python-based machine-vision pipeline integrating image preprocessing, feature extraction, model training, inference, and evaluation across <strong>1,500+ images</strong>.</li>
+            <li>Implemented and evaluated CNN and SVM algorithms using TensorFlow and Scikit-learn, achieving <strong>96% classification accuracy</strong> across multiple vegetable categories.</li>
+            <li>Diagnosed data-processing and model-performance issues across varying image and lighting conditions, improving reliability through modular preprocessing and validation workflows.</li>
+            <li>Collaborated on development, testing, and troubleshooting of machine-vision software for real-world agricultural applications.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="section-block">
+        <div class="section-heading"><span>Education</span></div>
+
+        <div class="exp-entry">
+          <div class="exp-header">
+            <div>
+              <h3>Master of Science — Artificial Intelligence Systems</h3>
+              <div class="exp-org">University of Florida, Gainesville, USA</div>
+              <div class="exp-detail">GPA: 3.72 / 4.0 &nbsp;·&nbsp; Volunteer, AI in Healthcare Club</div>
+              <div class="exp-detail">Courses: AI Systems · Machine Learning · Deep Learning · Computational Photography · Ethics in AI · IoT Security & Privacy</div>
+            </div>
+            <span class="exp-date">2025 – present</span>
+          </div>
+        </div>
+
+        <div class="exp-entry">
+          <div class="exp-header">
+            <div>
+              <h3>Bachelor of Technology — CSE, AI & ML</h3>
+              <div class="exp-org">JNTU Hyderabad / TKR College of Engineering & Technology, India</div>
+              <div class="exp-detail">GPA: 7.67 / 10 &nbsp;·&nbsp; Founder, AIML Club &nbsp;·&nbsp; NSS Associate (Feb 2022 – Apr 2024)</div>
+            </div>
+            <span class="exp-date">Dec 2020 – May 2024</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skills -->
+      <div class="section-block" style="padding-bottom: 52px;">
+        <div class="section-heading"><span>Skills</span></div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <p>Python · JavaScript · TypeScript · SQL · Java · C++</p>
+          </div>
+          <div class="skill-group">
+            <h4>Frontend</h4>
+            <p>React · HTML/CSS</p>
+          </div>
+          <div class="skill-group">
+            <h4>Backend & APIs</h4>
+            <p>FastAPI · Flask · Spring Boot · REST APIs</p>
+          </div>
+          <div class="skill-group">
+            <h4>AI / ML</h4>
+            <p>PyTorch · TensorFlow · Scikit-learn · Hugging Face Transformers · LLM Applications · Computer Vision · Deep Learning</p>
+          </div>
+          <div class="skill-group">
+            <h4>Data & Infrastructure</h4>
+            <p>PostgreSQL · MySQL · Kafka · Redis · Docker · AWS</p>
+          </div>
+          <div class="skill-group">
+            <h4>Engineering</h4>
+            <p>Git · GitHub · Linux · GitHub Actions · pytest · JUnit</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Last edited on: <span id="last-edited"></span>
+  </footer>
+  <script>
+    const d = new Date();
+    document.getElementById('last-edited').textContent =
+      d.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' }) +
+      ' ' + d.toTimeString().slice(0, 5);
+  </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Honey Reddy Daram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="site-name">Honey Reddy Daram</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="Honey_Resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <hr class="header-divider" />
+
+  <main>
+    <div class="main-inner">
+
+      <!-- Featured Projects -->
+      <div class="section-block">
+        <div class="section-heading"><span>Featured Projects</span></div>
+
+        <div class="project-entry featured">
+          <h3>OrderFlow</h3>
+          <div class="proj-meta">
+            <a href="https://github.com/honeyreddydaram/orderflow" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+          <p>
+            Built six independently deployable Spring Boot microservices coordinating asynchronous
+            order, inventory, payment, and notification workflows through Kafka.
+          </p>
+          <p>
+            Designed reliable event processing with transactional outbox, idempotent consumers,
+            retries, dead-letter handling, and compensating transactions.
+          </p>
+          <p>
+            Implemented concurrency-safe inventory reservation and automated integration testing
+            with JUnit, Testcontainers, Docker Compose, and GitHub Actions.
+          </p>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">Spring Boot</span>
+            <span class="tag">Apache Kafka</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Redis</span><span class="tag">Docker</span>
+            <span class="tag">JUnit</span><span class="tag">Testcontainers</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="project-entry featured">
+          <h3>AI-Powered Job Application Tracker</h3>
+          <p>
+            Full-stack application for tracking job applications, interview stages, deadlines, and
+            history — React frontend, FastAPI/PostgreSQL backend.
+          </p>
+          <p>
+            Authentication-protected workflows with filtering and search over application records,
+            exposed via REST APIs.
+          </p>
+          <p>
+            AI-assisted analysis of job descriptions to surface relevant skills; containerized with
+            Docker and deployed on AWS.
+          </p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">FastAPI</span>
+            <span class="tag">PostgreSQL</span><span class="tag">Python</span>
+            <span class="tag">Docker</span><span class="tag">AWS</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="project-entry featured">
+          <h3>NeuralMed</h3>
+          <div class="proj-meta">
+            <a href="https://github.com/honeyreddydaram/NeuralMed" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+          <p>
+            Flask-based application applying multiple disease-screening models across structured
+            clinical data and imaging.
+          </p>
+          <p>
+            Kidney CT classification via a fine-tuned VGG-16 model, alongside classical ML
+            (scikit-learn) and deep learning (TensorFlow) pipelines for other conditions.
+          </p>
+          <p>
+            Integrated Gemini-generated clinical summaries alongside model outputs.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Flask</span>
+            <span class="tag">TensorFlow</span><span class="tag">scikit-learn</span>
+            <span class="tag">REST</span><span class="tag">Gemini</span>
+            <span class="tag">VGG-16</span>
+          </div>
+        </div>
+
+        <div class="project-entry featured">
+          <h3>Ferry Loading Optimizer</h3>
+          <div class="proj-meta">
+            Hackathon &nbsp;·&nbsp;
+            <a href="https://github.com/honeyreddydaram/Ferry-Loading-Optimizer" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+          <p>
+            Python algorithm optimizing vehicle loading onto a ferry under size and weight constraints.
+          </p>
+          <p>
+            Achieved up to a 30% reduction in unused capacity in simulated loading scenarios.
+          </p>
+          <p>
+            Improved runtime by 40% versus the initial implementation through data-structure optimization.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Algorithms</span>
+            <span class="tag">Optimization</span><span class="tag">Resource Allocation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Projects -->
+      <div class="section-block" style="padding-bottom: 52px;">
+        <div class="section-heading"><span>Additional Projects</span></div>
+
+        <div class="project-entry">
+          <h3>AI-Powered ECG Signal Processing &amp; Arrhythmia Detection</h3>
+          <div class="proj-meta">
+            <a href="https://github.com/honeyreddydaram/Artificial-Intelligence-Systems-Main-" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+          <p>
+            Streamlit application for ECG signal processing, PQRST peak detection, and CNN-based
+            arrhythmia risk classification (Normal / Moderate Risk / High Risk).
+          </p>
+          <p>
+            Trained and evaluated on the MIT-BIH Arrhythmia Database (PhysioNet) using WFDB for
+            signal loading; achieved <strong>98.8% classification accuracy</strong>.
+          </p>
+          <p>
+            Containerized with Docker and tested via GitHub Actions CI.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">TensorFlow/Keras</span>
+            <span class="tag">Streamlit</span><span class="tag">scikit-learn</span>
+            <span class="tag">WFDB</span><span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="project-entry">
+          <h3>Ethical Challenges of AI in Hiring — Bias Audit Study</h3>
+          <div class="proj-meta">
+            <a href="https://github.com/honeyreddydaram/AIEthics_-Hiring" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+          <p>
+            Collaborative project with <strong>Lekha Dakshinamurthy</strong> and
+            <strong>Sathyadharini Srinivasan</strong>, auditing a hiring model trained on a
+            2,000-applicant synthetic dataset.
+          </p>
+          <p>
+            Found that surface-level fairness metrics passed regulatory thresholds while
+            <strong>24.8% of hiring decisions changed</strong> when only gender was flipped —
+            revealed using SHAP, LIME, and counterfactual analysis.
+          </p>
+          <p>
+            Proposed the <strong>IDEAL framework</strong> (Inclusive Data, Debiased Models,
+            Explainability by Default, Auditing &amp; Monitoring, Legal Compliance) for ethical
+            AI recruitment.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">scikit-learn</span>
+            <span class="tag">XGBoost</span><span class="tag">SHAP</span>
+            <span class="tag">LIME</span><span class="tag">Counterfactual Analysis</span>
+          </div>
+        </div>
+
+        <div class="project-entry">
+          <h3>Plant Detection using YOLOv8</h3>
+          <div class="proj-meta">
+            <a href="https://github.com/honeyreddydaram/Plants_Detection-YOLOv8" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+          <p>
+            Flask web application identifying medicinal/herbal plant species (Neem, Oleander,
+            Ficus Religiosa, Calotropis) from uploaded images using a trained YOLOv8 model.
+          </p>
+          <p>
+            Built on a public Roboflow plant-detection dataset (CC BY 4.0).
+          </p>
+          <p>
+            Returns the identified species along with basic traditional-use information.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Flask</span>
+            <span class="tag">Ultralytics YOLOv8</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Last edited on: <span id="last-edited"></span>
+  </footer>
+  <script>
+    const d = new Date();
+    document.getElementById('last-edited').textContent =
+      d.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' }) +
+      ' ' + d.toTimeString().slice(0, 5);
+  </script>
+</body>
+</html>
