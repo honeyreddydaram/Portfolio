@@ -31,6 +31,95 @@
       <div class="section-block">
         <div class="section-heading"><span>Featured Projects</span></div>
 
+        <div class="project-entry featured signbridge">
+          <h3>SignBridge</h3>
+          <p class="proj-subtitle">AI-Powered ASL Accessibility &amp; Learning Platform</p>
+          <div class="proj-meta">
+            <a href="https://github.com/honeyreddydaram/SignBridge-gamified-learning-app" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+          <p>
+            A full-stack accessibility and learning platform for American Sign Language,
+            built around three integrated modules — real-time computer-vision fingerspelling
+            recognition, everyday sign communication, and a gamified learning curriculum —
+            designed around how different learners and signers actually use ASL.
+          </p>
+          <div class="tags">
+            <span class="tag">Computer Vision</span><span class="tag">Accessibility</span>
+            <span class="tag">Gamification</span><span class="tag">React</span>
+            <span class="tag">FastAPI</span>
+          </div>
+
+          <details class="module-details">
+            <summary>Explore the three modules</summary>
+
+            <div class="module-flow">
+              <div class="module-step">
+                <div class="module-step-name">Recognition</div>
+                <p>
+                  Webcam-based ASL fingerspelling recognition (A–Z) using MediaPipe hand-landmark
+                  detection and a scikit-learn MLP classifier trained on real image data —
+                  ~86% accuracy on a held-out test set (small sample; not yet validated across
+                  real-world webcam conditions).
+                </p>
+                <video
+                  class="module-video"
+                  controls
+                  preload="none"
+                  poster="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/posters/recognition.jpg"
+                  src="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/recognition.mp4">
+                  Your browser doesn't support embedded video —
+                  <a href="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/recognition.mp4">download the recording</a>.
+                </video>
+              </div>
+              <div class="module-arrow">↓</div>
+              <div class="module-step">
+                <div class="module-step-name">Interpretation</div>
+                <p>
+                  Types English text and plays back verified sign video for supported
+                  vocabulary, with fingerspelling as a fallback for everything else — a
+                  supported-vocabulary communication aid, not a full grammatical
+                  English-to-ASL translator.
+                </p>
+                <video
+                  class="module-video"
+                  controls
+                  preload="none"
+                  poster="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/posters/interpretation.jpg"
+                  src="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/interpretation.mp4">
+                  Your browser doesn't support embedded video —
+                  <a href="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/interpretation.mp4">download the recording</a>.
+                </video>
+              </div>
+              <div class="module-arrow">↓</div>
+              <div class="module-step module-step-featured">
+                <div class="module-step-name">Learning</div>
+                <p>
+                  Gamified curriculum — XP, levels, streaks, hearts, and achievements —
+                  covering the full A–Z alphabet plus a verified vocabulary library, with real
+                  signer videos and source attribution, comprehension quizzes, and camera
+                  practice validated against the recognition model. Actively expanding with
+                  per-sign mastery tracking, quests, and contextual practice scenarios.
+                </p>
+                <video
+                  class="module-video module-video-featured"
+                  controls
+                  preload="none"
+                  poster="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/posters/learning.jpg"
+                  src="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/learning.mp4">
+                  Your browser doesn't support embedded video —
+                  <a href="https://raw.githubusercontent.com/honeyreddydaram/SignBridge-gamified-learning-app/main/docs/demos/learning.mp4">download the recording</a>.
+                </video>
+              </div>
+            </div>
+
+            <p class="signbridge-note">
+              The recognition model is objectively validated on A–Z fingerspelling only;
+              vocabulary-sign practice in Learning is self-guided and self-assessed, not
+              model-graded.
+            </p>
+          </details>
+        </div>
+
         <div class="project-entry featured">
           <h3>OrderFlow</h3>
           <div class="proj-meta">
